@@ -5,10 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Studio R - Agenda</title>
+    <link rel="stylesheet" href="./Css/agenda.css">
+    <link rel="shortcut icon" href="./Image/icone.png" type="image/png">
 </head>
 <body>
     <div class="container-content">
-        
+        <div class="side-perfil">
+            <div class="photo">
+                <span class="s-icon user"></span>
+            </div>
+            <div class="dados">
+                <h3>Nome</h3>
+                <h5>Profissão</h5>
+            </div>
+        </div>
+        <div class="navbar">
+            <button class="s-button trigger"><span class="s-icon menu-burguer"></span></button>
+            <a href=""><span class="s-icon logout"></span> Sair</a>
+        </div>
+        <div class="agenda">
+            <div class="search-form">
+                <form action="#">
+                    <input type="search" name="" id="">
+                    <button type="submit" class="s-button"><span class="s-icon search"></span></button>
+                </form>
+            </div>
+            <div class="over">
+                <div class="bloco-note">
+                    <h3>Cliente</h3>
+                    <div class="info">
+                        <p>Observação: 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="options">
+                            <span>Horário: </span>
+                            <span>Operação: </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label for="adc" class="s-button adc"><span class="s-icon plus"></span></label>
+        </div>
+    </div>
+    <input type="checkbox" name="" id="adc" class="modal-state">
+    <div class="modal">
+        <label class="overlay" for="adc"></label>
+        <div class="modal-body">
+            <div class="modal-header">
+                <h3>Cadastrar Cliente</h3>
+                <label class="close-modal" for="adc"></label>
+            </div>
+            <form action="#">
+                <div class="modal-content">
+                    <div class="label-modal">
+                        <label for="client">Cliente: </label>
+                        <input type="text" name="" id="cliente" class="s-input">
+                    </div>
+                    <div class="label-modal">
+                        <label for="horario">Horário: </label>
+                        <input type="text" name="" id="horario" class="s-input">
+                    </div>
+                    <div class="label-modal">
+                        <label for="operacao">Operação: </label>
+                        <input type="text" name="" id="operacao" class="s-input">
+                    </div>
+                    <div class="label-modal">
+                        <label for="obs">Observação: </label>
+                        <textarea name="" id="obs" maxlength="300" class="s-input"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="s-button confirme">Confirmar</button>       
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
